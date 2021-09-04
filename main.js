@@ -4,6 +4,7 @@ const result = document.getElementById('result');
 let additionResult;
 let subResult;
 let multiplyResult;
+let greaterResult;
 
 function addTwoNumbers() {
     result.innerHTML = ""
@@ -25,4 +26,16 @@ function multiplyTwoNumbers() {
     multiplyResult = parseInt(firstNum.value) * parseInt(secondNum.value);
     console.log(multiplyResult);
     result.innerHTML = "Multiply of Two Numbers: " + multiplyResult;
+}
+
+function greaterOfTwoNumbers() {
+    result.innerHTML = ""
+    if (parseInt(firstNum.value) > parseInt(secondNum.value)) {
+        greaterResult = firstNum.value;
+    };
+    if (parseInt(secondNum.value) > parseInt(firstNum.value)) {
+        greaterResult = secondNum.value;
+    };
+    console.log(greaterResult);
+    result.innerHTML = "Greater of Two Numbers: " + greaterResult;
 }
