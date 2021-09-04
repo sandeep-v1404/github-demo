@@ -3,6 +3,7 @@ const secondNum = document.getElementById('secondNumber');
 const result = document.getElementById('result');
 let additionResult;
 let subResult;
+let multiplyResult;
 
 function addTwoNumbers() {
     result.innerHTML = ""
@@ -16,4 +17,12 @@ function subtractTwoNumbers() {
     subResult = parseInt(firstNum.value) - parseInt(secondNum.value);
     console.log(subResult);
     result.innerHTML = "Difference of Two Numbers: " + subResult;
+}
+
+
+function multiplyTwoNumbers() {
+    result.innerHTML = ""
+    multiplyResult = parseInt(firstNum.value) * parseInt(secondNum.value);
+    console.log(multiplyResult);
+    result.innerHTML = "Multiply of Two Numbers: " + multiplyResult;
 }
