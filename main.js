@@ -20,7 +20,6 @@ function subtractTwoNumbers() {
     result.innerHTML = "Difference of Two Numbers: " + subResult;
 }
 
-
 function multiplyTwoNumbers() {
     result.innerHTML = ""
     multiplyResult = parseInt(firstNum.value) * parseInt(secondNum.value);
@@ -32,10 +31,13 @@ function greaterOfTwoNumbers() {
     result.innerHTML = ""
     if (parseInt(firstNum.value) > parseInt(secondNum.value)) {
         greaterResult = firstNum.value;
-    };
-    if (parseInt(secondNum.value) > parseInt(firstNum.value)) {
+    }
+    else if (parseInt(secondNum.value) > parseInt(firstNum.value)) {
         greaterResult = secondNum.value;
-    };
+    }
+    else {
+        result.innerHTML = "Both are Equal"
+    }
     console.log(greaterResult);
     result.innerHTML = "Greater of Two Numbers: " + greaterResult;
 }
