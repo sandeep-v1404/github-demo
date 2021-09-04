@@ -1,10 +1,19 @@
 const firstNum = document.getElementById('firstNumber');
 const secondNum = document.getElementById('secondNumber');
-let result = document.getElementById('result');
-let sum;
+const result = document.getElementById('result');
+let additionResult;
+let subResult;
 
-function addToNumbers() {
-    sum = parseInt(firstNum.value) + parseInt(secondNum.value);
-    console.log(sum);
-    result.innerHTML = "Sum of Two Numbers: " + sum;
+function addTwoNumbers() {
+    result.innerHTML = ""
+    additionResult = parseInt(firstNum.value) + parseInt(secondNum.value);
+    console.log(additionResult);
+    result.innerHTML = "Sum of Two Numbers: " + additionResult;
+}
+
+function subtractTwoNumbers() {
+    result.innerHTML = ""
+    subResult = parseInt(firstNum.value) - parseInt(secondNum.value);
+    console.log(subResult);
+    result.innerHTML = "Difference of Two Numbers: " + subResult;
 }
