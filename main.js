@@ -27,6 +27,13 @@ function multiplyTwoNumbers() {
     result.innerHTML = "Multiply of Two Numbers: " + multiplyResult;
 }
 
+function divideTwoNumbers() {
+    result.innerHTML = ""
+    divideResult = parseInt(firstNum.value) / parseInt(secondNum.value);
+    console.log(divideResult);
+    result.innerHTML = "Quotient of divide operation: " + divideResult;
+}
+
 function greaterOfTwoNumbers() {
     result.innerHTML = ""
     if (parseInt(firstNum.value) > parseInt(secondNum.value)) {
@@ -35,8 +42,9 @@ function greaterOfTwoNumbers() {
     else if (parseInt(secondNum.value) > parseInt(firstNum.value)) {
         greaterResult = secondNum.value;
     }
-    else {
+    else if (parseInt(secondNum.value) == parseInt(firstNum.value)){
         result.innerHTML = "Both are Equal"
+        return;
     }
     console.log(greaterResult);
     result.innerHTML = "Greater of Two Numbers: " + greaterResult;
