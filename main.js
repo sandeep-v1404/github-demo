@@ -26,3 +26,10 @@ function multiplyTwoNumbers() {
     console.log(multiplyResult);
     result.innerHTML = "Multiply of Two Numbers: " + multiplyResult;
 }
+
+function divideTwoNumbers() {
+    result.innerHTML = ""
+    divideResult = parseInt(firstNum.value) / parseInt(secondNum.value);
+    console.log(divideResult);
+    result.innerHTML = "Quotient of divide operation: " + divideResult;
+}
